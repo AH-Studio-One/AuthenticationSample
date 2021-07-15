@@ -11,7 +11,7 @@ import SwiftUI
 struct AuthenticationSampleApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            LaunchingView()
         }
     }
 }

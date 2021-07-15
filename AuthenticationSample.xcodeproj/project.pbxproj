@@ -8,24 +8,26 @@
 
 /* Begin PBXBuildFile section */
 		E0D0158A269DA69800FCB4F5 /* AuthenticationSampleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0D01589269DA69800FCB4F5 /* AuthenticationSampleApp.swift */; };
-		E0D0158C269DA69800FCB4F5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0D0158B269DA69800FCB4F5 /* ContentView.swift */; };
 		E0D0158E269DA69F00FCB4F5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E0D0158D269DA69F00FCB4F5 /* Assets.xcassets */; };
 		E0D01591269DA69F00FCB4F5 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E0D01590269DA69F00FCB4F5 /* Preview Assets.xcassets */; };
 		E0EF57B126A031C7003BF56A /* UserSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0EF57B026A031C7003BF56A /* UserSession.swift */; };
 		E0EF57B426A04741003BF56A /* RemoteUserSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0EF57B326A04741003BF56A /* RemoteUserSession.swift */; };
 		E0EF57B626A04757003BF56A /* UserProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0EF57B526A04757003BF56A /* UserProfile.swift */; };
+		E0EF57B926A04FA1003BF56A /* LaunchingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0EF57B826A04FA1003BF56A /* LaunchingView.swift */; };
+		E0EF57BC26A05058003BF56A /* FullscreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0EF57BB26A05058003BF56A /* FullscreenView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		E0D01586269DA69800FCB4F5 /* AuthenticationSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AuthenticationSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E0D01589269DA69800FCB4F5 /* AuthenticationSampleApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationSampleApp.swift; sourceTree = "<group>"; };
-		E0D0158B269DA69800FCB4F5 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		E0D0158D269DA69F00FCB4F5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E0D01590269DA69F00FCB4F5 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		E0D01592269DA69F00FCB4F5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E0EF57B026A031C7003BF56A /* UserSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSession.swift; sourceTree = "<group>"; };
 		E0EF57B326A04741003BF56A /* RemoteUserSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteUserSession.swift; sourceTree = "<group>"; };
 		E0EF57B526A04757003BF56A /* UserProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfile.swift; sourceTree = "<group>"; };
+		E0EF57B826A04FA1003BF56A /* LaunchingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchingView.swift; sourceTree = "<group>"; };
+		E0EF57BB26A05058003BF56A /* FullscreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FullscreenView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,6 +44,7 @@
 		E0D0157D269DA69800FCB4F5 = {
 			isa = PBXGroup;
 			children = (
+				E0EF57B726A04F6F003BF56A /* UserKitUI */,
 				E0EF57AF26A031AD003BF56A /* UserKit */,
 				E0D01588269DA69800FCB4F5 /* AuthenticationSample */,
 				E0D01587269DA69800FCB4F5 /* Products */,
@@ -60,7 +63,6 @@
 			isa = PBXGroup;
 			children = (
 				E0D01589269DA69800FCB4F5 /* AuthenticationSampleApp.swift */,
-				E0D0158B269DA69800FCB4F5 /* ContentView.swift */,
 				E0D0158D269DA69F00FCB4F5 /* Assets.xcassets */,
 				E0D01592269DA69F00FCB4F5 /* Info.plist */,
 				E0D0158F269DA69F00FCB4F5 /* Preview Content */,
@@ -92,6 +94,23 @@
 				E0EF57B526A04757003BF56A /* UserProfile.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		E0EF57B726A04F6F003BF56A /* UserKitUI */ = {
+			isa = PBXGroup;
+			children = (
+				E0EF57B826A04FA1003BF56A /* LaunchingView.swift */,
+				E0EF57BA26A0504C003BF56A /* ReusableView */,
+			);
+			path = UserKitUI;
+			sourceTree = "<group>";
+		};
+		E0EF57BA26A0504C003BF56A /* ReusableView */ = {
+			isa = PBXGroup;
+			children = (
+				E0EF57BB26A05058003BF56A /* FullscreenView.swift */,
+			);
+			path = ReusableView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -165,8 +184,9 @@
 			files = (
 				E0EF57B126A031C7003BF56A /* UserSession.swift in Sources */,
 				E0EF57B426A04741003BF56A /* RemoteUserSession.swift in Sources */,
+				E0EF57B926A04FA1003BF56A /* LaunchingView.swift in Sources */,
 				E0EF57B626A04757003BF56A /* UserProfile.swift in Sources */,
-				E0D0158C269DA69800FCB4F5 /* ContentView.swift in Sources */,
+				E0EF57BC26A05058003BF56A /* FullscreenView.swift in Sources */,
 				E0D0158A269DA69800FCB4F5 /* AuthenticationSampleApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
