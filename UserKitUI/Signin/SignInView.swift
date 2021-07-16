@@ -44,13 +44,13 @@ struct SignInView : View {
 
 #if DEBUG
 struct SignInView_Previews : PreviewProvider {
-  static var previews: some View {
-    NavigationView {
-      SignInView(viewModel: SignInViewModel(startSignInUseCase: { username, password in
-        print("Start sign in use case. \(username):\(password)")
-      }))
+    static var previews: some View {
+        NavigationView {
+            SignInView(viewModel: SignInViewModel(startSignInUseCase: { username, password in
+                print("Start sign in use case. \(username):\(password)")
+            }))
+        }
     }
-  }
 }
 #endif
 

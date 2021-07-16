@@ -109,6 +109,8 @@
 		E0EF57AF26A031AD003BF56A /* UserKit */ = {
 			isa = PBXGroup;
 			children = (
+				E0EF57E026A1AD44003BF56A /* MyApp */,
+				E0EF57DF26A1AD25003BF56A /* UserAuthRemoteAPI */,
 				E0EF57D726A1A0E0003BF56A /* UserSessionStore */,
 				E0EF57B226A04733003BF56A /* Model */,
 			);
@@ -128,20 +130,11 @@
 		E0EF57B726A04F6F003BF56A /* UserKitUI */ = {
 			isa = PBXGroup;
 			children = (
+				E0EF57DE26A1ACD9003BF56A /* Initial UI */,
+				E0EF57DD26A1ACBB003BF56A /* Signup */,
+				E0EF57DC26A1AC80003BF56A /* Signin */,
 				E0EF57BA26A0504C003BF56A /* ReusableView */,
 				E0EF57DB26A1A312003BF56A /* Reusable Model */,
-				E0EF57C126A0755E003BF56A /* MyAppDependencyContainer.swift */,
-				E0EF57BF26A070D6003BF56A /* MyApp.swift */,
-				E0EF57BD26A06B7F003BF56A /* WelcomeView.swift */,
-				E0EF57B826A04FA1003BF56A /* LaunchingView.swift */,
-				E0EF57C326A077A5003BF56A /* SignInView.swift */,
-				E0EF57C726A07856003BF56A /* SignUpView.swift */,
-				E0EF57CB26A18D3E003BF56A /* ErrorMessage.swift */,
-				E0EF57CD26A18E28003BF56A /* UserAuthenticationRemoteAPI.swift */,
-				E0EF57CF26A18E5A003BF56A /* SignInUseCase.swift */,
-				E0EF57D126A18E98003BF56A /* MainView.swift */,
-				E0EF57D326A18F01003BF56A /* CurrentView.swift */,
-				E0EF57D526A19A55003BF56A /* LandingView.swift */,
 			);
 			path = UserKitUI;
 			sourceTree = "<group>";
@@ -174,9 +167,56 @@
 		E0EF57DB26A1A312003BF56A /* Reusable Model */ = {
 			isa = PBXGroup;
 			children = (
-				E0EF57C526A077FE003BF56A /* SignInViewModel.swift */,
+				E0EF57CB26A18D3E003BF56A /* ErrorMessage.swift */,
 			);
 			path = "Reusable Model";
+			sourceTree = "<group>";
+		};
+		E0EF57DC26A1AC80003BF56A /* Signin */ = {
+			isa = PBXGroup;
+			children = (
+				E0EF57C526A077FE003BF56A /* SignInViewModel.swift */,
+				E0EF57C326A077A5003BF56A /* SignInView.swift */,
+				E0EF57CF26A18E5A003BF56A /* SignInUseCase.swift */,
+			);
+			path = Signin;
+			sourceTree = "<group>";
+		};
+		E0EF57DD26A1ACBB003BF56A /* Signup */ = {
+			isa = PBXGroup;
+			children = (
+				E0EF57C726A07856003BF56A /* SignUpView.swift */,
+			);
+			path = Signup;
+			sourceTree = "<group>";
+		};
+		E0EF57DE26A1ACD9003BF56A /* Initial UI */ = {
+			isa = PBXGroup;
+			children = (
+				E0EF57BD26A06B7F003BF56A /* WelcomeView.swift */,
+				E0EF57B826A04FA1003BF56A /* LaunchingView.swift */,
+				E0EF57D126A18E98003BF56A /* MainView.swift */,
+				E0EF57D326A18F01003BF56A /* CurrentView.swift */,
+				E0EF57D526A19A55003BF56A /* LandingView.swift */,
+			);
+			path = "Initial UI";
+			sourceTree = "<group>";
+		};
+		E0EF57DF26A1AD25003BF56A /* UserAuthRemoteAPI */ = {
+			isa = PBXGroup;
+			children = (
+				E0EF57CD26A18E28003BF56A /* UserAuthenticationRemoteAPI.swift */,
+			);
+			path = UserAuthRemoteAPI;
+			sourceTree = "<group>";
+		};
+		E0EF57E026A1AD44003BF56A /* MyApp */ = {
+			isa = PBXGroup;
+			children = (
+				E0EF57C126A0755E003BF56A /* MyAppDependencyContainer.swift */,
+				E0EF57BF26A070D6003BF56A /* MyApp.swift */,
+			);
+			path = MyApp;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
