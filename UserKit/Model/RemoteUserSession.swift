@@ -19,3 +19,8 @@ extension RemoteUserSession: Equatable {
         return lhs.token == rhs.token
     }
 }
+extension RemoteUserSession {
+  static var fake: RemoteUserSession {
+    RemoteUserSession(token: "fake-auth-token")
+  }
+}

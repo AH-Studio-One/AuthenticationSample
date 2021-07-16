@@ -23,3 +23,8 @@ extension UserSession: Equatable {
                 lhs.remoteSession == rhs.remoteSession
     }
 }
+extension UserSession {
+  static var fake: UserSession {
+    UserSession(profile: UserProfile.fake, remoteSession: RemoteUserSession.fake)
+  }
+}

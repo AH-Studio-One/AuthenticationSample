@@ -12,3 +12,8 @@ public struct UserProfile: Equatable, Codable {
     public let email: String
     public let mobileNumber: String
 }
+extension UserProfile {
+    static var fake: UserProfile {
+        UserProfile(name: "John Appleased", email: "johnny@gmail.com", mobileNumber: "510-736-8754")
+    }
+}

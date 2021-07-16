@@ -9,9 +9,9 @@ import SwiftUI
 
 struct LaunchingView : View {
   var body: some View {
-    FullscreenView(backgroundColor: Color.blue) {
+    FullscreenView(backgroundColor: Color("BackgroundColor")) {
       Image("logo")
-        .background(Color.clear)
+        .background(Color("BackgroundColor"))
         .padding()
       HStack {
         Text("Launching...")
