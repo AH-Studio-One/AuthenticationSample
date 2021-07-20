@@ -20,13 +20,13 @@ struct LandingView : View {
           .font(.title)
           .padding(.all)
       }
-      StartButton(action: goToDropoffLocationSelectionScreen)
+      StartButton(action: goToFeatureXScreen)
         .padding(.top, 60)
     }
   }
   
-  func goToDropoffLocationSelectionScreen() {
-    // TODO: Navigate to dropoff location selection.
+  func goToFeatureXScreen() {
+    // TODO: Navigate to feature_X view.
   }
 }
 

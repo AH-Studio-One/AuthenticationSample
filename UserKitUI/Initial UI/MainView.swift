@@ -8,7 +8,7 @@
 import SwiftUI
 /// The app's root view.
 struct MainView : View {
-  /// This is the app's state store that is threaded down the view hierachy. It's a kind of Redux-like usage of SwiftUI. Anytime any state in `Koober` changes, this view and the entire view hierarchy is recomputed to reflect changes. This is supposed to be cheap because only the views that change are re-rendered.
+  /// This is the app's state store that is threaded down the view hierachy. It's a kind of Redux-like usage of SwiftUI. Anytime any state in `MyApp` changes, this view and the entire view hierarchy is recomputed to reflect changes. This is supposed to be cheap because only the views that change are re-rendered.
   @ObservedObject var myApp: MyApp
   
   var body: some View {

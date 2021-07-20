@@ -36,7 +36,7 @@ struct SignInView : View {
       Spacer()
     }
     .padding()
-    .background(Color("BackgroundColor"))
+    .background(Color("SecondaryBackgroundColor"))
     .edgesIgnoringSafeArea(.bottom)
     .navigationBarTitle(Text("Sign In"))
   }

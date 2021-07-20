@@ -30,7 +30,6 @@ struct LaunchingView_Previews : PreviewProvider {
   static var previews: some View {
     Group {
         LaunchingView()
-        LaunchingView()
     }
   }
 }
